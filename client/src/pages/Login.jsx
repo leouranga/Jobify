@@ -7,8 +7,8 @@ const Login = () => {
       <form className="form">
         <Logo />
         <h4>login</h4>
-        <FormRow type="email" name="email" defaultValue="jake@gmail.com" />
-        <FormRow type="password" name="password" defaultValue="123456" />
+        <FormRow type="email" name="email" defaultValue="john@gmail.com" />
+        <FormRow type="password" name="password" defaultValue="secret123" />
         <button type="submit" className="btn btn-block">
           submit
         </button>
