@@ -3,6 +3,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 import express from "express";
 const app = express();
+
 import morgan from "morgan";
 import mongoose from "mongoose";
 import cookieParser from "cookie-parser";
@@ -22,6 +23,7 @@ if (process.env.NODE_ENV === "development") {
 
 app.use(cookieParser());
 app.use(express.json());
+app.set("etag", false);
 
 app.get("/", (req, res) => {
   res.send("Hello World");
