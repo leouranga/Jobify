@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.section`
   nav {
@@ -37,6 +37,18 @@ const Wrapper = styled.section`
   .btn {
     padding: 0.75rem 1rem;
   }
+  @media (max-width: 991px) {
+    .page {
+      margin-top: 0;
+      justify-items: center;
+      text-align: center;
+      padding-inline: 1.5rem;
+    }
+    nav {
+      justify-content: center;
+    }
+  }
+
   @media (min-width: 992px) {
     .page {
       grid-template-columns: 1fr 400px;
